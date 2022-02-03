@@ -16,7 +16,8 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ">
+        <div    class="container">
         <a class="navbar-brand" href="#">{{ config('app.name', 'User Management System') }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,8 +48,10 @@
                 @endif
             </div>
         </div>
+        </div>
     </nav>
-<main>
+
+    <main class="container">
     @yield('content')
 </main>
     </body>
